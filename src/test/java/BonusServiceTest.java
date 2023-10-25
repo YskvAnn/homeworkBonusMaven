@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
+
 public class BonusServiceTest {
 
     @Test
@@ -44,7 +45,7 @@ public class BonusServiceTest {
     }
 
     @Test
-void  shouldCalculateForIsRegisteredAndOverLimit() {
+    void shouldCalculateForIsRegisteredAndOverLimit() {
         BonusService service = new BonusService();
 
         long amount = 90_000;
@@ -54,6 +55,7 @@ void  shouldCalculateForIsRegisteredAndOverLimit() {
         long actual = service.calculate(amount, registered);
 
         Assertions.assertEquals(expected, actual);
-    }}
+    }
+}
 
 
